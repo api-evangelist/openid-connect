@@ -25,6 +25,8 @@ common:
     url: https://openid.net/developers/specs/
   - type: Reference
     url: https://openid.net/specs/openid-connect-core-1_0.html
+  - type: LLMsTxt
+    url: https://openid.net/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
