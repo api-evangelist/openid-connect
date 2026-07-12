@@ -19,6 +19,8 @@ modified: '2026-04-28'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/openid-connect-domain-security.yml
   - type: Website
     url: https://openid.net/
   - type: Documentation
@@ -27,6 +29,8 @@ common:
     url: https://openid.net/specs/openid-connect-core-1_0.html
   - type: LlmsText
     url: https://openid.net/llms.txt
+  - url: https://openid.net/feed/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
