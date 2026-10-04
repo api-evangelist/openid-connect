@@ -46,6 +46,9 @@ modified: '2026-04-28'
 specificationVersion: '0.23'
 apis: []
 common:
+  - type: CapabilityMap
+    url: capabilities/openid-connect-capability-edges.yml
+    name: OpenID Connect Business Capability Map
   - type: DomainSecurity
     url: security/openid-connect-domain-security.yml
   - type: Website
@@ -61,3 +64,76 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+apis:
+- aid: openid-connect:oidc-authentication-api
+  name: OIDC Authentication API
+  description: Endpoints for authenticating end-users and obtaining authorization grants.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Authentication
+  properties:
+  - type: OpenAPI
+    url: openapi/oidc-authentication-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:oidc-discovery-api
+  name: OIDC Discovery API
+  description: OpenID Connect Discovery endpoints for provider metadata.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Discovery
+  properties:
+  - type: OpenAPI
+    url: openapi/oidc-discovery-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:oidc-jwks-api
+  name: OIDC JWKS API
+  description: JSON Web Key Set endpoint for token signature verification.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - JWKS
+  properties:
+  - type: OpenAPI
+    url: openapi/oidc-jwks-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:oidc-session-api
+  name: OIDC Session API
+  description: Session management endpoints including logout.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Sessions
+  tags_raw:
+  - Session
+  properties:
+  - type: OpenAPI
+    url: openapi/oidc-session-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:oidc-token-api
+  name: OIDC Token API
+  description: Token endpoint for exchanging authorization codes for tokens.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Tokens
+  tags_raw:
+  - Token
+  properties:
+  - type: OpenAPI
+    url: openapi/oidc-token-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:oidc-user-info-api
+  name: OIDC User Info API
+  description: Endpoint for retrieving claims about the authenticated end-user.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - UserInfo
+  tags_raw:
+  - User Info
+  properties:
+  - type: OpenAPI
+    url: openapi/oidc-user-info-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
