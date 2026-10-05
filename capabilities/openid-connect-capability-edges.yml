@@ -1,0 +1,37 @@
+slug: openid-connect
+provider: OpenID Connect
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Authentication
+  spec_file: oidc-authentication-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.88
+  evidence: GET /authorize  authorize  Authorization Endpoint; 'allows clients to verify the identity
+    of end-users based on the authentication performed by an authorization server'
+  reason: The OIDC authorization endpoint is the core end-user authentication and consent step. For this
+    vendor identity federation IS the product, so Identity & Access Management is the honest mapping rather
+    than dismissing it as auth plumbing.
+- tag: User Info
+  spec_file: oidc-user-info-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.72
+  evidence: GET /userinfo getUserInfo UserInfo Endpoint; "allows clients to verify the identity of end-users
+    based on the authentication performed by an authorization server"
+  reason: The operations expose the OIDC UserInfo endpoint returning authenticated end-user claims — federated
+    identity/authentication, i.e. Identity & Access Management. It is protocol plumbing in one sense,
+    but IAM is the honest business capability for an identity protocol surface.
