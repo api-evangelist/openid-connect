@@ -1,0 +1,33 @@
+{
+  "provider": "openid-connect",
+  "sources": [
+    "oidc-authentication-api-openapi.yml",
+    "oidc-discovery-api-openapi.yml",
+    "oidc-jwks-api-openapi.yml",
+    "oidc-session-api-openapi.yml",
+    "oidc-token-api-openapi.yml",
+    "oidc-user-info-api-openapi.yml"
+  ],
+  "outputs": [
+    "openid-connect-authentication-api-openapi.yml",
+    "openid-connect-discovery-api-openapi.yml",
+    "openid-connect-jwks-api-openapi.yml",
+    "openid-connect-session-api-openapi.yml",
+    "openid-connect-token-api-openapi.yml",
+    "openid-connect-user-info-api-openapi.yml"
+  ],
+  "archived": [
+    "archived openapi/oidc-authentication-api-openapi.yml",
+    "archived openapi/oidc-discovery-api-openapi.yml",
+    "archived openapi/oidc-jwks-api-openapi.yml",
+    "archived openapi/oidc-session-api-openapi.yml",
+    "archived openapi/oidc-token-api-openapi.yml",
+    "archived openapi/oidc-user-info-api-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "apis.yml register: written (+6 apis, 6 total)"
+  ],
+  "skipped": []
+}

@@ -44,7 +44,73 @@ url: https://raw.githubusercontent.com/api-evangelist/openid-connect/refs/heads/
 created: '2025-01-01'
 modified: '2026-04-28'
 specificationVersion: '0.23'
-apis: []
+apis:
+- aid: openid-connect:openid-connect-authentication-api
+  name: OpenID Connect Authentication API
+  description: Endpoints for authenticating end-users and obtaining authorization grants.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Authentication
+  properties:
+  - type: OpenAPI
+    url: openapi/openid-connect-authentication-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:openid-connect-discovery-api
+  name: OpenID Connect Discovery API
+  description: OpenID Connect Discovery endpoints for provider metadata.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Discovery
+  properties:
+  - type: OpenAPI
+    url: openapi/openid-connect-discovery-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:openid-connect-jwks-api
+  name: OpenID Connect JWKS API
+  description: JSON Web Key Set endpoint for token signature verification.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - JWKS
+  properties:
+  - type: OpenAPI
+    url: openapi/openid-connect-jwks-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:openid-connect-session-api
+  name: OpenID Connect Session API
+  description: Session management endpoints including logout.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Session
+  properties:
+  - type: OpenAPI
+    url: openapi/openid-connect-session-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:openid-connect-token-api
+  name: OpenID Connect Token API
+  description: Token endpoint for exchanging authorization codes for tokens.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - Token
+  properties:
+  - type: OpenAPI
+    url: openapi/openid-connect-token-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
+- aid: openid-connect:openid-connect-user-info-api
+  name: OpenID Connect User Info API
+  description: Endpoint for retrieving claims about the authenticated end-user.
+  humanURL: https://openid.net/specs/openid-connect-core-1_0.html
+  tags:
+  - User Info
+  properties:
+  - type: OpenAPI
+    url: openapi/openid-connect-user-info-api-openapi.yml
+  - type: Documentation
+    url: https://openid.net/specs/openid-connect-core-1_0.html
 common:
   - type: CapabilityMap
     url: capabilities/openid-connect-capability-edges.yml
